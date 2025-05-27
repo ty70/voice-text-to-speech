@@ -1,7 +1,7 @@
 # VOICEVOX Text-to-Speech Web App with Streamlit
 
-このプロジェクトは、[VOICEVOX](https://voicevox.hiroshiba.jp/) エンジンを利用して日本語テキストから音声を合成する **StreamlitベースのWebアプリケーション** です。
-（voicevoxフォルダがないので、動きません、voicevoxの導入方法は、[ここから](https://github.com/ty70/voicevox-text-to-speech.git), 出来たフォルダをvoicevoxにリネームして使って下さい。
+このプロジェクトは、[VOICEVOX](https://voicevox.hiroshiba.jp/) エンジンをローカルで利用して日本語テキストから音声を合成する **StreamlitベースのWebアプリケーション** です。
+（voicevoxフォルダがないので動きません、導入方法は後述。）
 
 ## ✨ 特徴
 
@@ -20,11 +20,10 @@ git clone https://github.com/ty70/voice-text-to-speech.git
 cd voice-text-to-speech
 ```
 
-### ▶ 2. VOICEVOXエンジンの配置
+### ▶ 2. VOICEVOXエンジンの導入
 
-VOICEVOXエンジンのWindows用実行ファイルをダウンロードし、`voicevox/` フォルダ内に `run.exe` を配置してください。
-
-* ダウンロード: [https://github.com/VOICEVOX/voicevox\_engine/releases](https://github.com/VOICEVOX/voicevox_engine/releases)
+voicevoxの導入方法は、[ここからの手順２を参照](https://github.com/ty70/voicevox-text-to-speech.git)
+出来たフォルダをvoicevoxにリネームして使って下さい。
 
 ### ▶ 3. 必要パッケージのインストール
 
