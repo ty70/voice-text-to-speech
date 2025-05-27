@@ -1,7 +1,7 @@
 # VOICEVOX Text-to-Speech Web App with Streamlit
 
-このプロジェクトは、[VOICEVOX](https://voicevox.hiroshiba.jp/) エンジンをローカルで利用して日本語テキストから音声を合成する **StreamlitベースのWebアプリケーション** です。
-（voicevoxフォルダがないので動きません、導入方法は後述。）
+このプロジェクトは、[VOICEVOX](https://voicevox.hiroshiba.jp/) エンジンをローカルで利用してWebページで入力した日本語テキストから音声を合成する **StreamlitベースのWebアプリケーション** です。
+（voicevoxフォルダがないのでこのままでは動きません、導入方法は後述。）
 
 ## ✨ 特徴
 
@@ -81,7 +81,8 @@ streamlit run app.py
 ## ✅ LICENSE
 
 このプロジェクトは [MIT ライセンス](./LICENSE)で提供されます。
-VOICEVOXエンジンの使用については、VOICEVOX公式のライセンス・利用規約に従ってください。
+VOICEVOXエンジンの使用については、
+VOICEVOX公式のライセンス・利用規約に従ってください。
 
 ---
 
