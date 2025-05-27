@@ -60,7 +60,7 @@ streamlit run app.py
 
 ```
 .
-├─ voicevox/         # run.exeを配置するフォルダ
+├─ voicevox/         # run.exeを配置するフォルダ(別途自分で用意してください)
 ├─ app.py            # Streamlitアプリ本体（VOICEVOX起動含む）
 ├─ LICENSE
 ├─ README.md         # このファイル
