@@ -1,93 +1,94 @@
 # VOICEVOX Text-to-Speech Web App with Streamlit
 
-このプロジェクトは、[VOICEVOX](https://voicevox.hiroshiba.jp/) エンジンをローカルで利用してWebページで入力した日本語テキストから音声を合成する **StreamlitベースのWebアプリケーション** です。
-（voicevoxフォルダがないのでこのままでは動きません、導入方法は後述。）
+This project is a **Streamlit-based web application** that synthesizes speech from Japanese text entered on a web page using the [VOICEVOX](https://voicevox.hiroshiba.jp/) engine locally.
+(Note: The app will not work as-is without the `voicevox` folder. Installation instructions are provided below.)
 
-## ✨ 特徴
+## ✨ Features
 
-* Streamlit Web UI により、簡単にブラウザ上で音声合成が可能
-* VOICEVOXエンジンの自動起動（`run.exe`）に対応
-* 話者の選択、音声再生、ダウンロード機能を搭載
+* Easy voice synthesis via browser using the Streamlit Web UI
+* Automatic launching of the VOICEVOX engine (`run.exe` supported)
+* Includes speaker selection, audio playback, and download features
 
 ---
 
-## ⚡デモ実行方法（Windows）
+## ⚡ How to Run Demo (Windows)
 
-### ▶ 1. リポジトリのクローン
+### ▶ 1. Clone the Repository
 
 ```bash
 git clone https://github.com/ty70/voice-text-to-speech.git
 cd voice-text-to-speech
 ```
 
-### ▶ 2. VOICEVOXエンジンの導入
+### ▶ 2. Install the VOICEVOX Engine
 
-voicevoxの導入方法は、[ここからの手順２を参照](https://github.com/ty70/voicevox-text-to-speech.git)
-出来たフォルダをvoicevoxにリネームして使って下さい。
+Refer to [Step 2 from this guide](https://github.com/ty70/voicevox-text-to-speech.git) for instructions on installing VOICEVOX.
+Rename the resulting folder to `voicevox` and place it in the root directory.
 
-### ▶ 3. 必要パッケージのインストール
+### ▶ 3. Install Required Packages
 
 ```bash
 pip install -r requirements.txt
 ```
 
-または：
+Alternatively:
 
 ```bash
 pip install streamlit requests
 ```
 
-### ▶ 4. Streamlit アプリ起動（VOICEVOXも同時起動）
+### ▶ 4. Launch the Streamlit App (VOICEVOX launches automatically)
 
 ```bash
 streamlit run app.py
 ```
 
-初回起動時に VOICEVOX エンジンがバックグラウンドで起動されます。正常に起動するとWebページ上で操作可能になります。
+On first launch, the VOICEVOX engine will start in the background. Once initialized, the app will be accessible via a web interface.
 
 ---
 
-## 🌐 アプリ機能
+## 🌐 App Features
 
-* 文本入力: 任意の日本語テキスト
-* 話者選択: 四国めたん、ずんだもん、青山龍星など（speaker ID使用）
-* 音声生成: VOICEVOX APIを使用
-* 再生・ダウンロード: WAV形式で提供
+* Text Input: Any Japanese text
+* Speaker Selection: Includes options such as Shikoku Metan, Zundamon, Ryusei Aoyama (via speaker IDs)
+* Audio Generation: Utilizes the VOICEVOX API
+* Playback & Download: Provided in WAV format
 
 ---
 
-## 🛠 構成
+## 🛠 Project Structure
 
 ```
 .
-├─ voicevox/         # run.exeを配置するフォルダ(別途自分で用意してください)
-├─ app.py            # Streamlitアプリ本体（VOICEVOX起動含む）
+├─ voicevox/         # Folder for placing run.exe (must be prepared separately)
+├─ app.py            # Main Streamlit app (includes VOICEVOX launch)
 ├─ LICENSE
-├─ README.md         # このファイル
-├─ requirements.txt  # 必要パッケージ
-└─ utils.py          # 音声生成関数
+├─ README_ja.md      
+├─ README.md         # This file
+├─ requirements.txt  # Required Python packages
+└─ utils.py          # Functions for speech generation
 ```
+
 ---
 
-## 📅 TODO / 拡張案
+## 📅 TODO / Future Enhancements
 
-* 速度・ピッチ調整
-* 複数話者一括生成
-* 入力履歴の保存
-* Docker対応 / Linux対応版
+* Speed and pitch adjustment
+* Batch generation for multiple speakers
+* Input history saving
+* Docker / Linux support
 
 ---
 
 ## ✅ LICENSE
 
-このプロジェクトは [MIT ライセンス](./LICENSE)で提供されます。
-VOICEVOXエンジンの使用については、
-VOICEVOX公式のライセンス・利用規約に従ってください。
+This project is provided under the [MIT License](./LICENSE).
+Please follow the VOICEVOX official license and terms of use when using the VOICEVOX engine.
 
 ---
 
 ## 🙏 Special Thanks
 
-* VOICEVOX開発チーム
+* The VOICEVOX Development Team
 * [VOICEVOX ENGINE](https://github.com/VOICEVOX/voicevox_engine)
-* [Hiroshiba氏](https://github.com/hiroshiba)
+* [Hiroshiba](https://github.com/hiroshiba)
